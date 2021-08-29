@@ -15,11 +15,11 @@ import java.util.List;
 @RequiredArgsConstructor
 public class TrelloController {
 
-    private final TrelloClient trelloClient;
+    private final TrelloClient trelloService;
 
     @GetMapping("getTrelloBoards")
     public List<TrelloBoardDto> getTrelloBoards() {
-        return trelloClient.getTrelloBoards();
+        return trelloService.getTrelloBoards();
 
 //        trelloBoards.forEach(trelloBoardDto -> {
 //            System.out.println(trelloBoardDto.getId() + " " + trelloBoardDto.getName());
@@ -40,6 +40,6 @@ public class TrelloController {
 
     @PostMapping("createTrelloCard")
     public CreatedTrelloCard createTrelloCard(@RequestBody TrelloCardDto trelloCardDto) {
-        return trelloClient.createNewCard(trelloCardDto);
+        return trelloService.createNewCard(trelloCardDto);
     }
 }
