@@ -16,7 +16,7 @@ public class TrelloMapperTestSuite {
     @Test
     public void trelloMapToBoardsTest() {
         //Given
-        TrelloBoardDto trelloBoardDto = new TrelloBoardDto("name 1", "1", new ArrayList<>());
+        TrelloBoardDto trelloBoardDto = new TrelloBoardDto("1", "name 1", new ArrayList<>());
         List<TrelloBoardDto> trelloBoardDtoList = new ArrayList<>();
         trelloBoardDtoList.add(trelloBoardDto);
 
