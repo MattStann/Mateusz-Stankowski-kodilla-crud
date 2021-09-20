@@ -24,7 +24,8 @@ public class EmailScheduler {
                         adminConfig.getAdminMail(),
                         SUBJECT,
                         "Currently in database you got: " + size + ((size == 1) ? " Task" : " Tasks"),
-                        null
+                        null,
+                        "See you soon " + adminConfig.getAdminName()
                 )
         );
     }
