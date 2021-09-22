@@ -28,7 +28,8 @@ public class MailCreatorService {
 
         Context context = new Context();
         context.setVariable("message", message);
-        context.setVariable("tasks_url", "http://localhost:8888/tasks_frontend");
+        context.setVariable("tasks_url", "https://mattstann.github.io/");
+//        context.setVariable("tasks_url", "http://localhost:8888/tasks_frontend");
         context.setVariable("button", "Visit website");
         context.setVariable("admin_config", adminConfig);
         context.setVariable("goodbyeMessage", goodbyeMessage);
@@ -41,7 +42,8 @@ public class MailCreatorService {
     public String buildNumberOfTasksMailScheduler(String message, String goodbyeMessage) {
         Context context = new Context();
         context.setVariable("message", message);
-        context.setVariable("tasks_url", "http://localhost:8888/tasks_frontend");
+        context.setVariable("tasks_url", "https://mattstann.github.io/");
+//        context.setVariable("tasks_url", "http://localhost:8888/tasks_frontend");
         context.setVariable("button", "Check tasks");
         context.setVariable("admin_config", adminConfig);
         context.setVariable("goodbyeMessage", goodbyeMessage);
