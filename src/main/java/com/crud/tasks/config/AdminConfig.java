@@ -24,4 +24,15 @@ public class AdminConfig {
 
     @Value("${info.company.phone}")
     private String infoCompanyPhone;
+
+//    @Value("${info.company}")
+//    private Company company;
+
+//    @Getter
+//    private class Company {
+//        private String name;
+//        private String goal;
+//        private String email;
+//        private String phone;
+//    }
 }
